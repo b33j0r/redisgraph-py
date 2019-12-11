@@ -3,8 +3,8 @@ setup(
     name='redisgraph',
     version='2.1',
 
-    description='RedisGraph Python Client',
-    url='https://github.com/redislabs/redisgraph-py',
+    description='RedisGraph Python Client (b33j0r fork)',
+    url='https://github.com/b33j0r/redisgraph-py',
     packages=find_packages(),
     install_requires=['redis', 'PTable'],
     classifiers=[

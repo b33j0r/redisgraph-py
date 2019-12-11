@@ -24,6 +24,7 @@ class ResultSetScalarTypes(object):
     VALUE_NODE = 8
     VALUE_PATH = 9
 
+
 class QueryResult(object):
     LABELS_ADDED = 'Labels added'
     NODES_CREATED = 'Nodes created'
@@ -42,7 +43,7 @@ class QueryResult(object):
         if isinstance(response[-1], ResponseError):
             raise response[-1]
 
-        if len(response) is 1:
+        if len(response) == 1:
             self.parse_statistics(response[0])
         else:
             self.parse_results(response)
